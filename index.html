@@ -3,8 +3,9 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
     <!-- displays site properly based on user's device -->
-    <link rel="stylesheet" href="index.css" />
+
     <link
       rel="icon"
       type="image/png"
@@ -13,7 +14,14 @@
     />
 
     <title>Frontend Mentor | Bento grid</title>
-
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="index.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
+      rel="stylesheet"
+    />
     <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
     <style>
       .attribution {
@@ -25,68 +33,100 @@
       }
     </style>
   </head>
+  <body
+    class="bg-[#f5f5f5] dm-sans-normal flex flex-col justify-center items-center h-screen"
+  >
+    <main class="flex h-[80vh] w-[80vw]">
+      <section class="basis-1/5 flex flex-col">
+        <div class="bg-[#faeee2]">
+          <h4 class="text=3xl">
+            Create and schedule content<span class="text-[#7651dc] italic"
+              >quicker</span
+            >
+          </h4>
+          <button>Create Post</button>
+        </div>
+        <div
+          class="bg-[#ffcc69] flex flex-col p-5 rounded-lg gap-10 items-start"
+        >
+          <h4 class="text-3xl dm-sans-medium tracking-[-0.15rem]">
+            Write your <br />content <br />
+            using AI.
+          </h4>
+          <img src="./assets/images/illustration-ai-content.webp" alt="" />
+        </div>
+      </section>
 
-  <body>
-    <main>
-      <div class="social">
-        <h2>Social media <span>10x</span> <i>Faster</i> with AI</h2>
-        <img src="./assets/images/illustration-five-stars.webp" alt="" />
-        <p>over 4,000 5-star reviews</p>
-      </div>
+      <section class="basis-4/5 flex flex-col">
+        <div class="flex basis-4/5">
+          <div class="flex flex-col basis-3/4">
+            <div class="bg-[#7651dc]">
+              <h4>Social Media <span>10x</span> <i>Faster</i></h4>
+              <img src="./assets/images/illustration-five-stars.webp" alt="" />
+              <p>Over 4,000 5-star reviews</p>
+            </div>
+            <div class="flex">
+              <div class="bg-[white]">
+                <img
+                  src="./assets/images/illustration-multiple-platforms.webp"
+                  alt=""
+                />
+                <h4>Manage multiple accounts and platforms.</h4>
+              </div>
+              <div class="bg-[#ffcc69]">
+                <h4>Maintain a consistent posting schedule.</h4>
+                <img
+                  src="./assets/images/illustration-consistent-schedule.webp"
+                  alt=""
+                />
+              </div>
+            </div>
+          </div>
+          <div
+            class="bg-[#dcd1fc] gap-4 overflow-hidden flex flex-col p-5 basis1/4"
+          >
+            <h4 class="dm-sans-medium text-2xl leading-none">
+              Schedule to social media.
+            </h4>
+            <img
+              src="./assets/images/illustration-schedule-posts.webp"
+              alt=""
+            />
+            <p class="text-gray-700 dm-sans-medium text-sm">
+              Optimize post timings to publish content at the perfect time for
+              your audience.
+            </p>
+          </div>
+        </div>
 
-      <div class="manage">
-        <img
-          src="./assets/images/illustration-multiple-platforms.webp"
-          alt=""
-        />
-        <h2>Manage mulitiple accounts and platforms.</h2>
-      </div>
-      <div class="maintain">
-         <h2>Maintain a consistent posting schedule.</h2>
-        <img
-          src="./assets/images/illustration-consistent-schedule.webp"
-          alt=""
-        />
-      </div>
-      <div class="schedule">
-        <h2>Schedule to social media</h2>
-        <img src="./assets/images/illustration-schedule-posts.webp" alt="" />
-        <p>
-          Optimize post timings to publish content at the perfect time for your
-          audience.
-        </p>
-      </div>
-      <div class="grow">
-        <h2>Grow followers with non-stop content.</h2>
-        <img src="./assets/images/illustration-grow-followers.webp" alt="" />
-      </div>
-      <div class="percent">
-        <h2>56%</h2>
-        <img src="./assets/images/illustration-audience-growth.webp" alt="" />
-        <p>Faster audience growth.</p>
-      </div>
-      <div class="create">
-        <h2>Create and schedule content <span>quicker</span></h2>
-        <button>Create Post</button>
-      </div>
-
-      <div class="write">
-        <h2>Write your content using AI</h2>
-        <img src="./assets/images/illustration-ai-content.webp" alt="" />
-      </div>
+        <div class="flex basis-1/5">
+          <div
+            class="bg-[#ffffff] basis-1/4 flex flex-col h-fit p-5 rounded-lg gap-5"
+          >
+            <h4 class="dm-sans-medium text-5xl">56%</h4>
+            <p class="text-sm">faster audience growth</p>
+            <img
+              class="h-12"
+              src="./assets/images/illustration-audience-growth.webp"
+              alt=""
+            />
+          </div>
+          <div class="bg-[#7651dc] basis-3/4 flex items-center p-5 rounded-lg">
+            <img
+              src="./assets/images/illustration-grow-followers.webp"
+              alt=""
+              class="h-44"
+            />
+            <h4 class="text-white text-3xl">
+              Grow followers with non-stop content.
+            </h4>
+          </div>
+        </div>
+      </section>
     </main>
 
-    Social Media 10x Faster with AI Over 4,000 5-star reviews Manage multiple
-    accounts and platforms. Maintain a consistent posting schedule. Schedule to
-    social media. Optimize post timings to publish content at the perfect time
-    for your audience. Grow followers with non-stop content. >56% faster
-    audience growth Create and schedule content quicker. Write your content
-    using AI.
-
     <div class="attribution">
-      Challenge by
-      <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>.
-      Coded by <a href="#">Your Name Here</a>.
+      Challenge by Coded by <a href="#">Your Name Here</a>.
     </div>
   </body>
 </html>
